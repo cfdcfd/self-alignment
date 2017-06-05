@@ -25,7 +25,7 @@ python filter.py -i ./filter_0/SRR341581 -o ./filter/SRR341581
 ```
 time python statsLM.py -i ./blastnlm/SRR341626_NLM -o ./test_result2
 ```
-主要程序见statsLM.py,statsLM.py，两者的统计策略有细微差别
+主要程序见statsLM.py,statsLM_1.py，两者的统计策略有细微差别
 判别reads有效的原则：
 
 1. 比对长度>60
@@ -38,4 +38,4 @@ statsLM.py不考虑双端比对的问题
 主要程序见contig_stats.py
 利用统计结果可以优化数据库，可参考脚本simple.py
 
-其余.sh文件为胶水代码，供参考。
+其余.sh文件为部分胶水代码，供参考。
